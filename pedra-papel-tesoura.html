@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedra Papel Tesoura</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <p>Pedra Papel Tesoura</p>
+  <p class="titulo-jogo">Pedra Papel Tesoura</p>
 
-  <button onclick="
+  <button class="pedra-btn" onclick="
     numeroAleatorio = Math.random();
 
     if (numeroAleatorio > 0 && numeroAleatorio < 1/3) {
@@ -31,9 +34,9 @@
 
     alert(`Você escolheu pedra. O computador escolheu ${escolhaComputador}. ${resultado}`);
 
-  ">Pedra</button>
+  "><img class="pedra-img" src="./img/rock-emoji.png" alt=""></button>
 
-  <button onclick="
+  <button class="papel-btn" onclick="
     numeroAleatorio = Math.random();
 
     if (numeroAleatorio > 0 && numeroAleatorio < 1/3) {
@@ -55,9 +58,9 @@
     }
 
     alert(`Você escolheu papel. O computador escolheu ${escolhaComputador}. ${resultado}`);
-  ">Papel</button>
+  "><img class="papel-img" src="./img/paper-emoji.png" alt=""></button>
 
-  <button onclick="
+  <button class="tesoura-btn" onclick="
     numeroAleatorio = Math.random();
 
     if (numeroAleatorio > 0 && numeroAleatorio < 1/3) {
@@ -73,13 +76,14 @@
     if (escolhaComputador === 'pedra') {
       resultado = 'Você perdeu.';
     } else if (escolhaComputador === 'papel') {
-      resultado = 'Você ganhou';
+      resultado = 'Você ganhou.';
     } else if (escolhaComputador === 'tesoura') {
       resultado = 'Empatou.';
     }
 
     alert(`Você escolheu tesoura. O computador escolheu ${escolhaComputador}. ${resultado}`);
-  ">Tesoura</button>
+  "><img class="tesoura-img" src="./img/scissors-emoji.png" alt=""></button>
+
 
 
   <script>

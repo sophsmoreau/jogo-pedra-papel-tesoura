@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-jogo {
+
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.pedra-btn,
+.papel-btn,
+.tesoura-btn {
+  background-color: black;
+  height: 120px;
+  width: 120px;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+
+.pedra-btn:hover,
+.papel-btn:hover,
+.tesoura-btn:hover {
+  background-color: white;
+}
+
+.pedra-img,
+.papel-img,
+.tesoura-img {
+  height: 50px;
+}
